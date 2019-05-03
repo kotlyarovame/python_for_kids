@@ -45,6 +45,19 @@ wizard_list.append("медвежий коготь")
 wizard_list.append ('болиголов')
 wizard_list.append ('корень мандрагоры') 
 wizard_list.append ("болотный газ")
+#удаляю элементы 5,6,7 из списка
+del wizard_list[5]
+del wizard_list[6]
+del wizard_list[7]
 #вывод элементов списка со 2 по 5
-#print(wizard_list[2:5])
+print(wizard_list[2:5])
 print(wizard_list)
+
+#сложение списков
+list1 = [1,2,3,4,5]
+list2 = [6,7,8,9,0]
+list3 = list1 + list2
+print(list3)
+
+#умножение списков
+print(list1 * 5)
