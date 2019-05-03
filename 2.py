@@ -61,3 +61,7 @@ print(list3)
 
 #умножение списков
 print(list1 * 5)
+
+#кортеж
+cortage = (0,1,2,3,4,5)
+print (cortage[3])
