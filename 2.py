@@ -16,3 +16,6 @@ print(joke_text % bodypart2)
 #экранирование одинарной кавычки
 single_quote_str = '"Тут что-то не так, не будь я д\'Артаньян", — подумал он"'
 print (single_quote_str)
+
+nums = 'Что сказало число %s числу %s? Славный поясок!' %(bodypart1, 0)
+print(numsTwo)
