@@ -41,3 +41,31 @@ if pages == 50:
 elif pages == 100:
     print('другое сообщение')
 ```
+
+7. **int** - конвертирует строку в число
+
+ ```python
+ age = "10"
+conv_age = int (age)
+if conv_age == 10:
+    print ("JOKE")
+
+#не будет работать для дробных чисел в строке
+```
+
+8. **ﬂoat** - конвертирует дробные числа в строке в число
+```py
+age = "10.5"
+conv_age = float (age)
+if conv_age == 10:
+    print ("JOKE")
+ ```
+
+9. **str** - конвертирует число в строку
+```python
+age = 10
+conv_age = str (age)
+if conv_age == "10":
+    print ("JOKE")
+```
+

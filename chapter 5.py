@@ -45,3 +45,19 @@ if age >=10 or age <=12:
     print('13 + 49 + 84 + 155 + 97: что получится? Головная боль!')
 else: print('Что-что?')
 
+#переменная None
+value = None
+if value == None:
+    print ("Тут ничего нет")
+
+#конвертация строки в число
+age = "10"
+conv_age = int (age)
+if conv_age == 10:
+    print ("JOKE")
+
+#конвертация числа в строку
+age = 10
+conv_age = str (age)
+if conv_age == "10":
+    print ("JOKE")
