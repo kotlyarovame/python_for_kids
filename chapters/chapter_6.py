@@ -47,24 +47,32 @@ magic_coins = 70
 stolen_coins = 3
 coins = found_coins #приравниваем found_coins переменной coins (обуславливаем этой переменной, сколько у нас монет всего, чтобы не запутататься)
 for week in range (1, 53): #цикл для недель от 1 до 52 
-    coins = coins + magic_coins - stolen_coins: 
+    coins = coins + magic_coins - stolen_coins
     print ("Неделя %s = %s" % (week, coins))
 
 # цикл while
-step = 0
-while step < 10000: #для ступенек меньше кол-ва 10000
-    print (step)
-    if tired == True: #значение tired - неизвестно 
-        break #остановка кода
-    elif badweather == True: #значение badweather - неизвестно 
-        break #остановка кода
-    else: #если tired или badweather = False, то выполняется условие:
-        step = step + 1 
+#step = 0
+#while step < 10000: #для ступенек меньше кол-ва 10000
+#    print (step)
+#    if tired == True: #значение tired - неизвестно 
+#        break #остановка кода
+#    elif badweather == True: #значение badweather - неизвестно 
+#        break #остановка кода
+#    else: #если tired или badweather = False, то выполняется условие:
+#        step = step + 1 
 
 # цикл while выполняет следующие действия: 
 # 1. Проверяет условие.
 # 2. Выполняет код в блоке.
 # 3. Повторяет все сначала.
+
+#цикл с двумя условиями
+x = 45
+y = 80
+while x < 50 and y < 100:
+    x = x + 1
+    y = y + 1
+    print (x,y)
 
 
 
