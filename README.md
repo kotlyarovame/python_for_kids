@@ -6,3 +6,4 @@ book examples
 ### 3. [Функции](./functions.md)
 ### 4. [Черепашка](./turtle.md)
 ### 5. [Условия](./conditions.md)
+### 6. [Циклы](./cycles.md)
