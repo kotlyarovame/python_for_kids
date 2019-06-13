@@ -1,6 +1,3 @@
-def testfunk (myname):
-    print ("hello, my name is %s" % myname)
-
-testfunk('Skrillex')
-
-def testfunc (lname, )
+def action (hand) : #определяем функцию action (действие)
+    print("%s your right hand" %hand) #вывести надпись подстановкой аргумента функции, с помощью шаблонизатора
+action ("wave") #вызвать действие со значением аргумента wave (махать)
