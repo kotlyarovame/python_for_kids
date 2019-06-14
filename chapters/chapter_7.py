@@ -37,3 +37,9 @@ def example_2 (): #определяем функцию без аргументо
     return digit1 + digit2 + digit3 + anthr_digit
 print (example_2 ())
 
+def spaceship_building (cans):  #определяем функцию
+    total_cans = 0 #определяем переменную для изначального количества банок
+    for week in range (1, 51): #задаём цикл на 52 недели
+        total_cans = total_cans + cans #переопределяем переменную как перемнная + аргумент
+        print ("Неделя %s. Банок %s" % (week, total_cans)) #выводим номер недели и количество накопленных банок 
+spaceship_building (10) #вызываем функцию с количеством банок 10 в неделю
