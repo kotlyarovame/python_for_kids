@@ -16,9 +16,23 @@ class Animals(Animate): #создаем подкласс "животные"
 class Birds(Animals): #определяем подкласс "птицы"
     def fly (self): #определяем функцию класса "животные" - способность летать
         print ("летит")
+    def find_food (self): #функция, вызывающая другие функции
+        self.move() #вызываем функцию "move" через аргумент self (12 строка)
+        print ("I find some food!")
+        self.eat_food() #вызываем функцию "eat_food" через аргумент self (14 строка)
+    def keep_patience (self):
+            self.eat_food ()
+    def dance_a_jig (self):
+        self.move()
+        self.move()
+        self.move()
+        self.move()
+
+
 class Ravens(Birds): #определяем подкласс "ворон"
-    def keep_patience(self): #определяем функцию класса "животные" - терпение
-        print ("терпит")
+    pass
+#    def keep_patience(self): #определяем функцию класса "животные" - терпение
+#        print ("терпит")
 
 yakov = Ravens() #определяем переменную "Яков", привязываем ее к подклассу "ворон"
 yakov.fly() #даем Якову команду лететь 
@@ -27,7 +41,8 @@ yakov.breathe() #даем Якову команду дышать
 diaval = Ravens() #определяем переменную "Диаваль", привязываем ее к подклассу "ворон"
 diaval.move() #даем Диавалю комаду двигаться 
 
-
+yakov.find_food()
+diaval.dance_a_jig()
 
 import turtle
 
@@ -44,9 +59,6 @@ donatello.forward (100)
 
 michelangelo.left (180)
 michelangelo.forward (50)
-
-rafael = turtle.Pen()
-rafael.forward (50)
 
 
 
