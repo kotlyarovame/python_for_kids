@@ -28,3 +28,25 @@ diaval = Ravens() #определяем переменную "Диаваль", �
 diaval.move() #даем Диавалю комаду двигаться 
 
 
+
+import turtle
+
+rafael = turtle.Pen() 
+donatello = turtle.Pen()
+michelangelo = turtle.Pen()
+
+rafael.forward(100)
+rafael.right (50)
+rafael.forward (60)
+
+donatello.left (90)
+donatello.forward (100)
+
+michelangelo.left (180)
+michelangelo.forward (50)
+
+rafael = turtle.Pen()
+rafael.forward (50)
+
+
+
