@@ -20,8 +20,6 @@ class Birds(Animals): #определяем подкласс "птицы"
         self.move() #вызываем функцию "move" через аргумент self (12 строка)
         print ("I find some food!")
         self.eat_food() #вызываем функцию "eat_food" через аргумент self (14 строка)
-    def keep_patience (self):
-            self.eat_food ()
     def dance_a_jig (self):
         self.move()
         self.move()
@@ -30,19 +28,28 @@ class Birds(Animals): #определяем подкласс "птицы"
 
 
 class Ravens(Birds): #определяем подкласс "ворон"
-    pass
-#    def keep_patience(self): #определяем функцию класса "животные" - терпение
-#        print ("терпит")
+    #def keep_patience (self): #определяем функцию класса "животные" - терпение
+    #    print ("терпит")
+    def __init__ (self, feathers): #функция инициализации, принимающая 2 аргумента
+        self.raven_feathers = feathers #присваиваем значение аргумента feathers свойству объекта raven_feathers 
 
-yakov = Ravens() #определяем переменную "Яков", привязываем ее к подклассу "ворон"
-yakov.fly() #даем Якову команду лететь 
-yakov.breathe() #даем Якову команду дышать
+#yakov = Ravens() #определяем переменную "Яков", привязываем ее к подклассу "ворон"
+#yakov.fly() #даем Якову команду лететь 
+#yakov.breathe() #даем Якову команду дышать
 
-diaval = Ravens() #определяем переменную "Диаваль", привязываем ее к подклассу "ворон"
-diaval.move() #даем Диавалю комаду двигаться 
+#diaval = Ravens() #определяем переменную "Диаваль", привязываем ее к подклассу "ворон"
+#diaval.move() #даем Диавалю комаду двигаться 
 
-yakov.find_food()
-diaval.dance_a_jig()
+#yakov.find_food()
+#diaval.dance_a_jig()
+
+ozwald = Ravens(100)
+print (ozwald.raven_feathers)
+gertruda = Ravens(150)
+print (gertruda.raven_feathers)
+
+
+
 
 import turtle
 
